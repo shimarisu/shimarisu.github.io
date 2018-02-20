@@ -1,0 +1,200 @@
+#VRML V2.0 utf8
+
+Background {
+	skyColor 0.7 0.7 1
+}
+
+
+Viewpoint {
+	position 0 0 70
+}
+
+
+#DEF Light1 PointLight {
+#	intensity 0.9
+#	color 1.0 1.0 1.0
+#	location -40 80 0
+#	radius 152
+#	attenuation 0.1 0.01 0
+#}
+
+#PointLight {
+#  location 光源の位置
+ # color r g b
+#  intensity 明るさ (0～1)
+#  on 光源の点灯(TRUE)/消灯(FALSE)
+#  ambientIntensity 環境光の明るさ
+#  attenuation 光の減衰率
+#  radius 光の到達半径
+#}
+
+
+
+DEF Light1 PointLight {
+	intensity 0.8
+	color 0.8 0.9 1.0
+	location -10 80 10
+	radius 100
+	attenuation 0.01 0.001 0
+}
+
+
+DEF SpotL SpotLight {
+	ambientIntensity 0
+	attenuation 1 0 0
+	beamWidth 1.570796
+	color 1 1 1
+	cutOffAngle 0.85398
+	direction 0 0 -1
+	intensity 1
+	location -8 2 6
+	radius 80
+}
+
+
+DEF monitor Transform {
+	children [
+		#Beda
+		Transform { 
+			translation 0 0 -1
+			children [
+				Shape {
+					appearance Appearance {
+						material Material {
+							 transparency   0.2
+							diffuseColor 0 0 0
+						}
+					}
+					geometry IndexedFaceSet {
+						solid TRUE
+						coord Coordinate{
+							point	[
+							-11	-6	0,
+							-4	-6	0,
+							-2	-2	0,
+							2	-2	0,
+							4	-6	0,
+							11	-6	0,
+							11	0	0,
+							3	8	0,
+							-3	8	0,
+							-11	0	0,
+							-7	-2	0,
+							-4	-2	0,
+							-4	2	0,
+							-7	2	0,
+							4	-2	0,
+							7	-2	0,
+							7	2	0,
+							4	2	0
+							]
+						}
+						coordIndex	[
+							0,1,10,9,-1,
+							1,2,10,-1,
+							3,4,15,-1,
+							4,5,6,15,-1,
+							6,16,15,-1,
+							6,7,16,-1,
+							7,17,16,-1,
+							7,8,12,11,14,17,-1,
+							8,13,12,-1,
+							8,9,13,-1,
+							9,10,13,-1
+						]
+					}
+				}
+			]
+		}
+
+
+		# HananoAna
+		Transform { 
+			translation 0 0 -1
+			children [
+				Shape {
+					appearance Appearance {
+						material Material {
+							 transparency   0.2
+							diffuseColor 0 0 0
+						}
+					}
+					geometry IndexedFaceSet {
+						solid TRUE
+						coord Coordinate{
+							point	[
+							-2	-6	0,
+							-1	-6	0,
+							-1	-4	0,
+							-2	-4	0
+							]
+						}
+						coordIndex	[
+							0,1,2,3,-1
+						]
+					}
+				}
+			]
+		}
+
+
+		# HananoAna
+		Transform { 
+			translation 0 0 -1
+			children [
+				Shape {
+					appearance Appearance {
+						material Material {
+							 transparency   0.2
+							diffuseColor 0 0 0
+						}
+					}
+					geometry IndexedFaceSet {
+						solid TRUE
+						coord Coordinate{
+							point	[
+							1	-6	0,
+							2	-6	0,
+							2	-4	0,
+							1	-4	0
+							]
+						}
+						coordIndex	[
+							0,1,2,3,-1
+						]
+					}
+				}
+			]
+		}
+
+
+
+	]
+
+
+
+}
+
+DEF keyboad Transform {
+	translation -10 -10 25
+	rotation 1 0 0 5.2
+	children [
+		Shape {
+			appearance Appearance {
+				material Material {
+					diffuseColor 0 0 0
+					 transparency   0.3
+				}
+			}
+			geometry Text {
+				string "INFR"
+				fontStyle FontStyle {
+					family "SANS"
+					size 10
+				}
+			}
+		}
+	]
+}
+
+
