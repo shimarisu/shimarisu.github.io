@@ -61,12 +61,12 @@ DEF monitor Transform {
 				Shape {
 					appearance Appearance {
 						material Material {
-							 transparency   0.2
+							transparency   0.0
 							diffuseColor 0 0 0
 						}
 					}
 					geometry IndexedFaceSet {
-						solid TRUE
+						solid FALSE
 						coord Coordinate{
 							point	[
 							-11	-6	0,
@@ -175,15 +175,15 @@ DEF monitor Transform {
 
 }
 
-DEF keyboad Transform {
-	translation -10 -10 25
+DEF INFRA Transform {
+	translation -10.5 -10 17
 	rotation 1 0 0 5.2
 	children [
 		Shape {
 			appearance Appearance {
 				material Material {
 					diffuseColor 0 0 0
-					 transparency   0.3
+					 transparency   0
 				}
 			}
 			geometry Text {
