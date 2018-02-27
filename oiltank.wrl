@@ -5,13 +5,52 @@ Background {
 	skyColor 0.8 0.8 1
 }
 
+
+
+#目
+DEF Secure Transform {
+	translation -0.7 0.4 2.5
+	rotation 1 0 0 -034
+	children [
+		Shape {
+		  geometry Sphere {
+		    radius 0.3
+		  }
+		  appearance Appearance {
+		    material Material {}
+		  }
+		}
+	]
+}
+
+
+DEF Secure Transform {
+	translation 0.7 0.4 2.5
+	rotation 1 0 0 -0.3
+	children [
+		Shape {
+		  geometry Sphere {
+		    radius 0.3
+		  }
+		  appearance Appearance {
+		    material Material {}
+		  }
+		}
+	]
+}
+
+
+
+
+
+
 DEF tank Transform {
 	translation 0 0 0
 	children [
 		Shape {
 			appearance Appearance {
 				material Material {
-					diffuseColor 0.6 0.6 0.6
+					diffuseColor 0.4 0.4 0.4
 				}
 			}
 			geometry Cylinder {radius 2.5 height 5}
@@ -37,7 +76,7 @@ DEF tank Transform {
 
 #ロゴ
 DEF Secure Transform {
-	translation -1.3 -0.5 5
+	translation -1.3 -0.3 5
 	rotation 1 0 0 -0.3
 	children [
 		Shape {
