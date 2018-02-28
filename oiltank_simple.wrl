@@ -1,0 +1,141 @@
+#VRML V2.0 utf8
+
+
+Background {
+	skyColor 0.8 0.8 1
+}
+
+
+
+#目
+DEF Eye1 Transform {
+	translation -1 0.4 2.5
+	children [
+		Shape {
+		  geometry Sphere {
+		    radius 0.5
+		  }
+		  appearance Appearance {
+			material Material {
+				diffuseColor 1 0.6 0.6
+				emissiveColor 0.5 0 0
+			}
+		  }
+		}
+	]
+}
+
+
+DEF Eye2 Transform {
+	translation 0.9 0.4 2.5
+	children [
+		Shape {
+		  geometry Sphere {
+		    radius 0.5
+		  }
+		  appearance Appearance {
+			material Material {
+				diffuseColor 0 1 0
+				emissiveColor 0 0.5 0
+			}
+		  }
+		}
+	]
+}
+
+
+#口
+DEF mouse Transform {
+	translation 0 -1 2.5
+	children [
+		Shape {
+		  geometry Sphere {
+		    radius 0.5
+		  }
+		  appearance Appearance {
+			material Material {
+				diffuseColor 1 1 1
+			}
+		  }
+		}
+	]
+}
+
+
+DEF tank Transform {
+	translation 0 0 0
+	children [
+		Shape {
+			appearance Appearance {
+				material Material {
+					diffuseColor 0.4 0.4 0.4
+				}
+				#Textureを張る画像を切り替えることでモニタ内の画像を切り替えられる。
+#				texture ImageTexture{
+#					url "kuchi.png"
+#				}
+			}
+			geometry Cylinder {radius 2.5 height 5}
+		}
+	]
+}
+
+DEF lingUpper Transform {
+	translation 0 2.5 0
+	children [
+		Shape {
+			appearance Appearance {
+				material Material {
+					diffuseColor 0.4 0.4 0.4
+				}
+			}
+			geometry Cylinder {radius 2.65 height 0.2}
+		}
+	]
+}
+
+
+DEF lingCenter Transform {
+	translation 0 0 0
+	children [
+		Shape {
+			appearance Appearance {
+				material Material {
+					diffuseColor 0.4 0.4 0.4
+				}
+			}
+			geometry Cylinder {radius 2.65 height 0.2}
+		}
+	]
+}
+
+
+DEF lingUnder Transform {
+	translation 0 -2.5 0
+	children [
+		Shape {
+			appearance Appearance {
+				material Material {
+					diffuseColor 0.4 0.4 0.4
+				}
+			}
+			geometry Cylinder {radius 2.65 height 0.2}
+		}
+	]
+}
+
+
+
+DEF hachimaki Transform {
+	translation 0 1.5 0
+	children [
+		Shape {
+			appearance Appearance {
+				material Material {
+					diffuseColor 1 1 1
+				}
+			}
+			geometry Cylinder {radius 2.65 height 1}
+		}
+	]
+}
