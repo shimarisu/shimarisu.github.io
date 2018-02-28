@@ -83,109 +83,97 @@ DEF Engineer Transform {
 
 
 #ラック
-
-
-#脚　フロント
-Transform { 
-	translation 2.5 3 -2
+DEF LAC Transform {
+	translation 2 0 0
 	children [
-		Shape {
-			appearance Appearance {
-				material Material {
-					diffuseColor 0.5 0.5 0.5
+		#脚　フロント
+		Transform { 
+			translation 2.5 3 -2
+			children [
+				Shape {
+					appearance Appearance {
+						material Material {
+							diffuseColor 0.2 0.2 0.2
+						}
+					}
+					geometry Box {size 1 10 1}
 				}
-			}
-			geometry Box {size 1 10 1}
+			]
 		}
-	]
-}
 
-#脚リア
-#Transform { 
-#	translation 7.5 3 -8
-#	children [
-#		Shape {
-#			appearance Appearance {
-#				material Material {
-#					diffuseColor 0.5 0.5 0.5
-#				}
-#			}
-#			geometry Box {size 1 10 1}
-#		}
-#	]
-#}
-
-#脚　フロント
-Transform { 
-	translation 7.5 3 -2
-	children [
-		Shape {
-			appearance Appearance {
-				material Material {
-					diffuseColor 0.5 0.5 0.5
+		#脚　フロント
+		Transform { 
+			translation 7.5 3 -2
+			children [
+				Shape {
+					appearance Appearance {
+						material Material {
+							diffuseColor 0.2 0.2 0.2
+						}
+					}
+					geometry Box {size 1 10 1}
 				}
-			}
-			geometry Box {size 1 10 1}
+			]
 		}
-	]
-}
 
-#サーバー下段
-Transform { 
-	translation 5 0 -2
-	children [
-		Shape {
-			appearance Appearance {
-				material Material {
-					diffuseColor 0.5 0.5 0.5
+		#サーバー下段
+		Transform { 
+			translation 5 0 -2
+			children [
+				Shape {
+					appearance Appearance {
+						material Material {
+							diffuseColor 0.2 0.2 0.2
+						}
+					}
+					geometry Box {size 6 2.5 1 }
 				}
-			}
-			geometry Box {size 6 2.5 1 }
+			]
 		}
-	]
-}
 
-#サーバー下段
-Transform { 
-	translation 5 3 -2
-	children [
-		Shape {
-			appearance Appearance {
-				material Material {
-					diffuseColor 0.5 0.5 0.5
+		#サーバー下段
+		Transform { 
+			translation 5 3 -2
+			children [
+				Shape {
+					appearance Appearance {
+						material Material {
+							diffuseColor 0.2 0.2 0.2
+						}
+					}
+					geometry Box {size 6 2.5 1 }
 				}
-			}
-			geometry Box {size 6 2.5 1 }
+			]
 		}
-	]
-}
 
-#サーバー中段
-Transform { 
-	translation 5 6 -2
-	children [
-		Shape {
-			appearance Appearance {
-				material Material {
-					diffuseColor 0.5 0.5 0.5
+		#サーバー中段
+		Transform { 
+			translation 5 6 -2
+			children [
+				Shape {
+					appearance Appearance {
+						material Material {
+							diffuseColor 0.2 0.2 0.2
+						}
+					}
+					geometry Box {size 6 2.5 1 }
 				}
-			}
-			geometry Box {size 6 2.5 1 }
+			]
 		}
-	]
-}
 
-#サーバー上段
-Transform { 
-	translation 5 9 -2
-	children [
-		Shape {
-			appearance Appearance {
-				material Material {
-					diffuseColor 0.5 0.5 0.5
+		#サーバー上段
+		Transform { 
+			translation 5 9 -2
+			children [
+				Shape {
+					appearance Appearance {
+						material Material {
+							diffuseColor 0.2 0.2 0.2
+						}
+					}
+					geometry Box {size 6 2.5 1 }
 				}
-			}
-			geometry Box {size 6 2.5 1 }
+			]
 		}
 	]
 }
