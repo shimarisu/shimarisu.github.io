@@ -1,0 +1,435 @@
+#VRML V2.0 utf8
+# ICON for Tera Term 5
+
+
+Background {
+	skyColor 0.7 0.7 1
+}
+
+
+Viewpoint {
+	position -0 -30 350
+}
+
+#DEF Light1 PointLight {
+#	intensity 0.8
+#	color 0.8 0.9 1.0
+#	location -10 80 10
+#	radius 100
+#	attenuation 0.01 0.001 0
+#}
+
+# T Logo
+#Tロゴ
+DEF T Anchor {
+    url "https://ja.osdn.net/projects/ttssh2/"
+    description "Tera Term"
+	children [
+		Shape {
+			appearance Appearance {
+				material Material {
+					diffuseColor 0 0 1
+				}
+			}
+			geometry IndexedFaceSet {
+				solid TRUE
+				coord Coordinate{
+					point   [
+#					-45 45  3,
+#					-45 15  3,
+#					45  15  3,
+#					45  45  3,
+#					-15 30  3,
+#					-15 -35 3,
+#					15  -35 3,
+#					15  15  3
+
+
+					-45 40  3,
+					-45 10  3,
+					45  10  3,
+					45  40  3,
+					-15 25  3,
+					-15 -40 3,
+					15  -40 3,
+					15  10  3
+
+
+					]
+				}
+				coordIndex  [
+					0,1,2,3,-1,
+					4,5,6,7,-1
+				]
+			}
+		}
+	]
+}
+
+
+
+# T Logo
+#T影ロゴ
+#DEF TShadow Anchor {
+#    url "https://ja.osdn.net/projects/ttssh2/"
+#    description "Tera Term"
+#	children [
+#		Shape {
+#			appearance Appearance {
+#				material Material {
+#					diffuseColor 1 0.5 0.5
+#				}
+#			}
+#			geometry IndexedFaceSet {
+#				solid TRUE
+#				coord Coordinate{
+#					point   [
+#					-30 30  2,
+#					-30 0  2,
+#					60 0  2,
+#					60  30  2,
+#					0 15  2,
+#					0 -50 2,
+#					30  -50 2,
+#					30  0  2
+#					]
+#				}
+#				coordIndex  [
+#					0,1,2,3,-1,
+#					4,5,6,7,-1
+#				]
+#			}
+#		}
+#	]
+#}
+
+
+# 5 Logo
+#5ロゴ
+#DEF A5 Transform {
+#	translation -5 5 0
+#	children [
+#		Shape {
+#			appearance Appearance {
+#				material Material {
+#					diffuseColor 1 0.6 0
+#					transparency   0
+#				}
+#			}
+#			geometry IndexedFaceSet {
+#				solid TRUE
+#				coord Coordinate{
+#					point   [
+#					30 -5  3,
+#					30 -30  3,
+#					55 -30  3,
+#					55 -35  3,
+#					30 -35  3,
+#					30 -45 3,
+#					60 -45 3,
+#					65 -40 3,
+#					65 -25 3,
+#					60 -20 3,
+#					40 -20 3,
+#					40 -15 3,
+#					65 -15 3,
+#					65 -5 3
+#					]
+#				}
+#				coordIndex  [
+#					0,1,10,11,-1,
+#					10,1,2,9,-1,
+#					2,8,9,-1,
+#					2,3,7,8,-1,
+#					3,6,7,-1,
+#					3,4,5,6,-1,
+#					0,11,12,13,-1
+#				]
+#			}
+#		}
+#	]
+#}
+
+
+
+DEF monitor Transform {
+	children [
+
+
+		#Back ground Grean
+		Transform { 
+			translation 0 0 -1
+			children [
+
+				Shape {
+					appearance Appearance {
+
+						material Material {
+							 transparency   0.2
+							diffuseColor 1 1 0
+						}
+					}
+					geometry IndexedFaceSet {
+						solid TRUE
+						coord Coordinate{
+							point	[
+							-75	55	0.8,
+							-75	-55	0.8,
+							75	-55	0.8,
+							75	55	0.8
+							]
+						}
+						coordIndex	[
+							0,1,2,3,-1
+						]
+					}
+				}
+			]
+		}
+
+
+		Transform {
+			translation -80 -60 0
+			rotation 1 0 0 1.57
+			children [
+				Shape {
+					appearance Appearance {
+						material Material {
+							diffuseColor 0.6 0.6 0.6
+						}
+					}
+					geometry Cylinder {radius 5 height 2}
+				}
+			]
+		}
+
+		Transform {
+			translation 80 -60 0
+			rotation 1 0 0 1.57
+			children [
+				Shape {
+					appearance Appearance {
+						material Material {
+							diffuseColor 0.6 0.6 0.6
+						}
+					}
+					geometry Cylinder {radius 5 height 2}
+				}
+			]
+		}
+		Transform {
+			translation -80 60 0
+			rotation 1 0 0 1.57
+			children [
+				Shape {
+					appearance Appearance {
+						material Material {
+							diffuseColor 0.6 0.6 0.6
+						}
+					}
+					geometry Cylinder {radius 5 height 2}
+				}
+			]
+		}
+
+		Transform {
+			translation 80 60 0
+			rotation 1 0 0 1.57
+			children [
+				Shape {
+					appearance Appearance {
+						material Material {
+							diffuseColor 0.6 0.6 0.6
+						}
+					}
+					geometry Cylinder {radius 5 height 2}
+				}
+			]
+		}
+
+
+		#UP FRAME
+		Transform { 
+			translation 0 60 0
+			children [
+				Shape {
+					appearance Appearance {
+						material Material {
+							diffuseColor 0.6 0.6 0.6
+						}
+					}
+					geometry Box {size 160 10 2}
+				}
+			]
+		}
+
+		#DOWN FRAME
+		Transform { 
+			translation 0 -60 0
+			children [
+				Shape {
+					appearance Appearance {
+						material Material {
+							diffuseColor 0.6 0.6 0.6
+						}
+					}
+					geometry Box {size 160 10 2}
+				}
+			]
+		}
+
+
+		#LEFT FRAME
+		Transform { 
+			translation -80 0 0
+			children [
+				Shape {
+					appearance Appearance {
+						material Material {
+							diffuseColor 0.6 0.6 0.6
+						}
+					}
+					geometry Box {size 10 120 2}
+				}
+			]
+		}
+
+		#Right FRAME
+		Transform { 
+			translation 80 0 0
+			children [
+				Shape {
+					appearance Appearance {
+						material Material {
+							diffuseColor 0.6 0.6 0.6
+						}
+					}
+					geometry Box {size 10 120 2}
+				}
+			]
+		}
+
+	]
+}
+
+
+
+
+
+DEF keyboad Transform {
+	translation 0 -90 60
+	rotation 1 0 0 5.0
+	children [
+		Transform {
+			translation -80 -30 0
+			rotation 1 0 0 1.57
+			children [
+				Shape {
+					appearance Appearance {
+						material Material {
+							diffuseColor 1 1 1
+							emissiveColor 0.3 0.3 0.3
+						}
+					}
+					geometry Cylinder {radius 5 height 4}
+				}
+			]
+		}
+
+		Transform {
+			translation 80 -30 0
+			rotation 1 0 0 1.57
+			children [
+				Shape {
+					appearance Appearance {
+						material Material {
+							diffuseColor 1 1 1
+							emissiveColor 0.3 0.3 0.3
+						}
+					}
+					geometry Cylinder {radius 5 height 4}
+				}
+			]
+		}
+
+		Transform {
+			translation -80 50 0
+			rotation 1 0 0 1.57
+			children [
+				Shape {
+					appearance Appearance {
+						material Material {
+							diffuseColor 1 1 1
+							emissiveColor 0.3 0.3 0.3
+						}
+					}
+					geometry Cylinder {radius 5 height 4}
+				}
+			]
+		}
+
+		Transform {
+			translation 80 50 0
+			rotation 1 0 0 1.57
+			children [
+				Shape {
+					appearance Appearance {
+						material Material {
+							diffuseColor 1 1 1
+							emissiveColor 0.3 0.3 0.3
+						}
+					}
+					geometry Cylinder {radius 5 height 4}
+				}
+			]
+		}
+
+		#SIDE FIT
+		Transform { 
+			translation 0 10 0
+			children [
+				Shape {
+					appearance Appearance {
+						material Material {
+							diffuseColor 1 1 1
+							emissiveColor 0.3 0.3 0.3
+						}
+					}
+					geometry Box {size 170 80 4}
+				}
+			]
+		}
+
+		#TATE FIT
+		Transform { 
+			translation 0 10 0
+			children [
+				Shape {
+					appearance Appearance {
+						material Material {
+							diffuseColor 1 1 1
+							emissiveColor 0.3 0.3 0.3
+						}
+					}
+					geometry Box {size 160 90 4}
+				}
+			]
+		}
+
+		#KEY TOP
+		Transform { 
+			translation 0 12 2
+			children [
+				Shape {
+					appearance Appearance {
+						material Material {
+							diffuseColor 1 1 1
+							emissiveColor 0.5 0.5 0.5
+						}
+					}
+					geometry Box {size 150 45 3}
+				}
+			]
+		}
+	]
+}
