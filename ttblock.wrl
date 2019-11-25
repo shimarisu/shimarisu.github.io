@@ -8,7 +8,7 @@ Background {
 
 
 Viewpoint {
-	position -0 -30 350
+	position 0 -30 350
 }
 
 #DEF Light1 PointLight {
@@ -165,7 +165,7 @@ DEF monitor Transform {
 					appearance Appearance {
 
 						material Material {
-							 transparency   0.2
+							 transparency   0
 							diffuseColor 1 1 0
 						}
 					}
