@@ -19,11 +19,11 @@ Viewpoint {
 #	attenuation 0.01 0.001 0
 #}
 
-# T Logo
-#Tロゴ
-DEF T Anchor {
-    url "https://ja.osdn.net/projects/ttssh2/"
-    description "Tera Term"
+#M Logo
+#Mロゴ
+DEF M Anchor {
+	url "https://ja.osdn.net/projects/ttssh2/"
+	description "Tera Term"
 	children [
 		Shape {
 			appearance Appearance {
@@ -35,31 +35,26 @@ DEF T Anchor {
 				solid TRUE
 				coord Coordinate{
 					point   [
-#					-45 45  3,
-#					-45 15  3,
-#					45  15  3,
-#					45  45  3,
-#					-15 30  3,
-#					-15 -35 3,
-#					15  -35 3,
-#					15  15  3
-
-
-					-45 40  3,
-					-45 10  3,
-					45  10  3,
-					45  40  3,
-					-15 25  3,
-					-15 -40 3,
-					15  -40 3,
-					15  10  3
-
-
+					-50 40  3,
+					-50 -40  3,
+					-20 -40 3,
+					-20 0 3,
+					-5 -15 3,
+					5 -15 3,
+					20 0 3,
+					20 -40 3,
+					50 -40 3,
+					50 40 3,
+					20 40 3,
+					0 20 3,
+					-20 40 3
 					]
 				}
 				coordIndex  [
-					0,1,2,3,-1,
-					4,5,6,7,-1
+					0,1,2,12,-1,
+					10,7,8,9,-1,
+					12,3,4,5,11,-1,
+					11,5,6,10,-1
 				]
 			}
 		}
