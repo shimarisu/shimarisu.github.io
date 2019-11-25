@@ -198,7 +198,7 @@ DEF monitor Transform {
 							diffuseColor 0.6 0.6 0.6
 						}
 					}
-					geometry Cylinder {radius 5 height 2}
+					geometry Cylinder {radius 7.5 height 2}
 				}
 			]
 		}
@@ -213,7 +213,7 @@ DEF monitor Transform {
 							diffuseColor 0.6 0.6 0.6
 						}
 					}
-					geometry Cylinder {radius 5 height 2}
+					geometry Cylinder {radius 7.5 height 2}
 				}
 			]
 		}
@@ -227,7 +227,7 @@ DEF monitor Transform {
 							diffuseColor 0.6 0.6 0.6
 						}
 					}
-					geometry Cylinder {radius 5 height 2}
+					geometry Cylinder {radius 7.5 height 2}
 				}
 			]
 		}
@@ -242,7 +242,7 @@ DEF monitor Transform {
 							diffuseColor 0.6 0.6 0.6
 						}
 					}
-					geometry Cylinder {radius 5 height 2}
+					geometry Cylinder {radius 7.5 height 2}
 				}
 			]
 		}
@@ -258,7 +258,7 @@ DEF monitor Transform {
 							diffuseColor 0.6 0.6 0.6
 						}
 					}
-					geometry Box {size 160 10 2}
+					geometry Box {size 160 15 2}
 				}
 			]
 		}
@@ -273,7 +273,7 @@ DEF monitor Transform {
 							diffuseColor 0.6 0.6 0.6
 						}
 					}
-					geometry Box {size 160 10 2}
+					geometry Box {size 160 15 2}
 				}
 			]
 		}
@@ -289,7 +289,7 @@ DEF monitor Transform {
 							diffuseColor 0.6 0.6 0.6
 						}
 					}
-					geometry Box {size 10 120 2}
+					geometry Box {size 15 120 2}
 				}
 			]
 		}
@@ -304,7 +304,7 @@ DEF monitor Transform {
 							diffuseColor 0.6 0.6 0.6
 						}
 					}
-					geometry Box {size 10 120 2}
+					geometry Box {size 15 120 2}
 				}
 			]
 		}
@@ -331,7 +331,7 @@ DEF keyboad Transform {
 							emissiveColor 0.3 0.3 0.3
 						}
 					}
-					geometry Cylinder {radius 5 height 4}
+					geometry Cylinder {radius 5 height 7}
 				}
 			]
 		}
@@ -347,7 +347,7 @@ DEF keyboad Transform {
 							emissiveColor 0.3 0.3 0.3
 						}
 					}
-					geometry Cylinder {radius 5 height 4}
+					geometry Cylinder {radius 5 height 7}
 				}
 			]
 		}
@@ -363,7 +363,7 @@ DEF keyboad Transform {
 							emissiveColor 0.3 0.3 0.3
 						}
 					}
-					geometry Cylinder {radius 5 height 4}
+					geometry Cylinder {radius 5 height 7}
 				}
 			]
 		}
@@ -379,7 +379,7 @@ DEF keyboad Transform {
 							emissiveColor 0.3 0.3 0.3
 						}
 					}
-					geometry Cylinder {radius 5 height 4}
+					geometry Cylinder {radius 5 height 7}
 				}
 			]
 		}
@@ -395,7 +395,7 @@ DEF keyboad Transform {
 							emissiveColor 0.3 0.3 0.3
 						}
 					}
-					geometry Box {size 170 80 4}
+					geometry Box {size 170 80 7}
 				}
 			]
 		}
@@ -411,7 +411,7 @@ DEF keyboad Transform {
 							emissiveColor 0.3 0.3 0.3
 						}
 					}
-					geometry Box {size 160 90 4}
+					geometry Box {size 160 90 7}
 				}
 			]
 		}
@@ -427,7 +427,7 @@ DEF keyboad Transform {
 							emissiveColor 0.5 0.5 0.5
 						}
 					}
-					geometry Box {size 150 45 4}
+					geometry Box {size 150 45 12}
 				}
 			]
 		}
