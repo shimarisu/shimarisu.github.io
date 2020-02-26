@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <svg xmlns="http://www.w3.org/2000/svg" 
+       xmlns:xlink="http://www.w3.org/1999/xlink"
+       version="1.1" width="300" height="300">
+    <rect x="10" y="10" width="200" height="100" fill="none" stroke="#A0A0A0" />
+    <rect x="45" y="10" rx="5" ry="5" width="200" height="120" stroke="#A0A0A0" fill="#FFF000" stroke-width="7"/>
+    <text x="10" y="60" text-anchor="middle">よう</text>
+    <line x1="95" y1="30" x2="195" y2="30" stroke-width="15" stroke="#0000FF" />
+    <line x1="145" y1="30" x2="145" y2="105" stroke-width="15" stroke="#0000FF" />
+    <polygon points="50 140, 0 180, 300 180, 250 140" fill="#A0A0A0"/>
+    <polygon points="0 180, 0 190, 300 190, 300 180" fill="#D0D0D0"/>
+  </svg>
+</body>
+</html>
