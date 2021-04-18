@@ -12,14 +12,6 @@ Viewpoint {
 	position 10 -20 350
 }
 
-#DEF Light1 PointLight {
-#	intensity 0.8
-#	color 0.8 0.9 1.0
-#	location -10 80 10
-#	radius 500
-#	attenuation 0.01 0.001 0
-#}
-
 #M Logo
 #Mロゴ
 DEF M Transform {
@@ -97,7 +89,7 @@ DEF tab Transform {
 		Shape {
 			appearance Appearance {
 				material Material {
-					diffuseColor 0.8 0.8 0.8
+					diffuseColor 0.5 0.5 0.5
 				}
 			}
 			geometry IndexedFaceSet {
@@ -117,37 +109,49 @@ DEF tab Transform {
 	]
 }
 
+
+#paper edge
+DEF Edge Transform {
+	translation 0 -1 3
+	children [
+		Shape {
+			appearance Appearance {
+				material Material {
+					diffuseColor 0.5 0.5 0.5
+				}
+			}
+			geometry IndexedFaceSet {
+				solid TRUE
+				coord Coordinate{
+					point   [
+					90 110 -4,
+					-40 110  -4,
+					-40 -80  -4,
+					120 -80 -4,
+					120 80 -4,
+					110 80 -4,
+					110 -70 -4,
+					-30 -70 -4,
+					-30 100 -4,
+					90 100 -4
+					]
+				}
+				coordIndex  [
+					0,1,8,9,-1,
+					1,2,7,8,-1,
+					2,3,6,7,-1,
+					3,4,5,6,-1
+				]
+			}
+		}
+	]
+}
+
+
+
+
 DEF monitor Transform {
 	children [
-
-		#Back ground
-#		Transform { 
-#			translation 0 0 -1
-#			children [
-#				Shape {
-#					appearance Appearance {
-#						material Material {
-#							 transparency   0.2
-#							diffuseColor 1 1 0
-#						}
-#					}
-#					geometry IndexedFaceSet {
-#						solid TRUE
-#						coord Coordinate{
-#							point	[
-#							-75	55	0.8,
-#							-75	-55	0.8,
-#							75	-55	0.8,
-#							75	55	0.8
-#							]
-#						}
-#						coordIndex	[
-#							0,1,2,3,-1
-#						]
-#					}
-#				}
-#			]
-#		}
 
 		#Back ground 左上
 		Transform { 
@@ -248,7 +252,7 @@ DEF monitor Transform {
 					appearance Appearance {
 
 						material Material {
-							diffuseColor 0.9 0.7 0
+							diffuseColor 0.92 0.72 0
 						}
 					}
 					geometry IndexedFaceSet {
@@ -334,7 +338,7 @@ DEF monitor Transform {
 				Shape {
 					appearance Appearance {
 						material Material {
-							diffuseColor 0.8 0.6 0
+							diffuseColor 0.85 0.65 0
 						}
 					}
 					geometry IndexedFaceSet {
@@ -364,7 +368,7 @@ DEF monitor Transform {
 				Shape {
 					appearance Appearance {
 						material Material {
-							diffuseColor 0.9 0.7 0
+							diffuseColor 0.92 0.72 0
 						}
 					}
 					geometry IndexedFaceSet {
@@ -412,7 +416,8 @@ DEF monitor Transform {
 				}
 			]
 		}
-		
+
+
 		
 		# Vezel
 		Transform {
@@ -541,6 +546,7 @@ DEF monitor Transform {
 
 
 
+
 DEF keyboad Transform {
 	translation 0 -90 60
 	rotation 1 0 0 5.0
@@ -556,7 +562,7 @@ DEF keyboad Transform {
 							emissiveColor 0.3 0.3 0.3
 						}
 					}
-					geometry Cylinder {radius 5 height 2}
+					geometry Cylinder {radius 5 height 4}
 				}
 			]
 		}
@@ -572,7 +578,7 @@ DEF keyboad Transform {
 							emissiveColor 0.3 0.3 0.3
 						}
 					}
-					geometry Cylinder {radius 5 height 2}
+					geometry Cylinder {radius 5 height 4}
 				}
 			]
 		}
@@ -588,7 +594,7 @@ DEF keyboad Transform {
 							emissiveColor 0.3 0.3 0.3
 						}
 					}
-					geometry Cylinder {radius 5 height 2}
+					geometry Cylinder {radius 5 height 4}
 				}
 			]
 		}
@@ -604,7 +610,7 @@ DEF keyboad Transform {
 							emissiveColor 0.3 0.3 0.3
 						}
 					}
-					geometry Cylinder {radius 5 height 2}
+					geometry Cylinder {radius 5 height 4}
 				}
 			]
 		}
@@ -620,7 +626,7 @@ DEF keyboad Transform {
 							emissiveColor 0.3 0.3 0.3
 						}
 					}
-					geometry Box {size 170 80 2}
+					geometry Box {size 170 80 4}
 				}
 			]
 		}
@@ -636,7 +642,7 @@ DEF keyboad Transform {
 							emissiveColor 0.3 0.3 0.3
 						}
 					}
-					geometry Box {size 160 90 2}
+					geometry Box {size 160 90 4}
 				}
 			]
 		}
@@ -652,7 +658,7 @@ DEF keyboad Transform {
 							emissiveColor 0.5 0.5 0.5
 						}
 					}
-					geometry Box {size 150 45 2}
+					geometry Box {size 150 45 6}
 				}
 			]
 		}
