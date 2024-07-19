@@ -1,15 +1,12 @@
-@charset "shift-jis";
-/* this @charset is for mozilla's bug */
+@charset "UTF-8";
 
-
-
-a:link    {color: #006f5f} /* �����N�F */
-a:visited {color: #6f2f7f} /* �K�ꂽ���Ƃ̂��郊���N�F */
-a:active  {color: #7f006f} /* �N���b�N���Ă��鎞�̃����N�F */
+a:link    {color: #006f5f} /* リンク色 */
+a:visited {color: #6f2f7f} /* 訪れたことのあるリンク色 */
+a:active  {color: #7f006f} /* クリックしている時のリンク色 */
 a:hover   {
   color: #ffffff;
   background:#3f3faf;
-} /* �}�E�X����ɂ��鎞�̃����N�F */
+} /* マウスが上にある時のリンク色 */
 
 
 body {
@@ -19,8 +16,8 @@ body {
 
 
 h1 {color: #ffffff;
-background-color: #393cad;
-border-color: #000094;
+background-color: #444444;
+border-color: #333333;
 width: 100%;
 border-style: solid;
 border-top-width: 0.1em;
