@@ -4,7 +4,7 @@ a:link    {color: #006f5f} /* リンク色 */
 a:visited {color: #6f2f7f} /* 訪れたことのあるリンク色 */
 a:active  {color: #7f006f} /* クリックしている時のリンク色 */
 a:hover   {
-  color: #ffffff;
+  color: #ff0000;
   background:#3f3faf;
 } /* マウスが上にある時のリンク色 */
 
@@ -57,8 +57,6 @@ th {
   border-left:0px #ffffff;
   border-right:0px #ccaaaa;
   border-style:solid;
-
-
 }
 td {
   color: #000000;
