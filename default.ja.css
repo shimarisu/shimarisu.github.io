@@ -5,7 +5,7 @@ a:visited {color: #6f2f7f} /* 訪れたことのあるリンク色 */
 a:active  {color: #7f006f} /* クリックしている時のリンク色 */
 a:hover   {
   color: #ff0000;
-  background:#3f3faf;
+  background:#5f5faf;
 } /* マウスが上にある時のリンク色 */
 
 
