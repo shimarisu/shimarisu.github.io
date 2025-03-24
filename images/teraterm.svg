@@ -1,0 +1,30 @@
+<svg width="160" height="160" viewBox="0 0 160 160" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient id="grad1" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" style="stop-color:#F2F060; stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#EAC040; stop-opacity:1" />
+        </linearGradient>
+    </defs>
+
+    <!--
+    <polygon points="0 0, 0 160, 160 160, 160 0" fill="#A0B0A0" />
+    -->
+    <!-- frame -->
+    <rect x="29" y="19" rx="1" ry="1" width="102" height="78" stroke="#A0A0A0" stroke-width="10" />
+    <!-- monitor -->
+    <rect x="31" y="21" width="98" height="74" 
+          fill="url(#grad1)" stroke="#A0A0A0" stroke-width="4" />
+    <!-- T -->
+    <line x1="50" y1="37" x2="110" y2="37" stroke-width="13" stroke="#0000FF" />
+    <line x1="80" y1="37" x2="80" y2="86" stroke-width="13" stroke="#0000FF" />
+    <!-- Keyboad BASE -->
+
+    <polygon points="25 105, 24 106, 10 137, 12 138, 148 138 , 150 137, 136 106,135 105" fill="#A0A0A0" />
+    <polygon points="12 138, 12 143, 148 143, 148 138" fill="#FBFBFB" />
+    <polygon points="10 137, 10 142, 12 143, 12 138" fill="#FCFCFC" />
+    <polygon points="148 138, 148 143, 150 142, 150 137" fill="#F0F0F0" />
+
+    <!-- Keyboad KeyTop -->
+    <polygon points="30 109, 24 125, 136 125, 130 109" fill="#C8C8C8" />
+    <polygon points="24 125, 24 127, 136 127, 136 125" fill="#FBFBFB" />
+</svg>
